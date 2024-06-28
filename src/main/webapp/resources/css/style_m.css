@@ -1,0 +1,300 @@
+@media (max-width: 1120px){
+  .top_banner a {
+    font-size: 16px;
+  }
+  .header_inner {
+    width: 100%;
+    padding: 0 5.5555555556vw;
+  }
+  .header_inner nav {
+    display: none;
+  }
+  .header_inner #logo {
+    height: 18px;
+    width: 102px;
+  }
+  .header_inner .top_icon .dp_icon {
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #main_banner {
+    height: 113.28125vw;
+    min-height: auto;
+  }
+  .main_inner {
+    align-items: center;
+    width: 100%;
+  }
+  .main_inner h3 {
+    font-size: clamp(24px, 4.1666667vw, 40px);
+    margin-bottom: 6.5104166667vw;
+  }
+  #main_txt p {
+    font-size: clamp(13px, 1.953125vw, 18px);
+  }
+  #main_txt {
+    height: auto;
+  }
+  .main_inner .search_bar {
+    width: 57.6822916667vw;
+    height: 44px;
+  }
+  .main_inner .search_bar {
+    padding: 13px 4.9661399549%;
+  }
+  .main_inner .search_bar .search_area {
+    font-size: clamp(12px, 2.0833333333vw, 16px);
+  }
+  .section {
+    padding: 0 5.5555555556vw;
+  }
+  .title {
+    font-size: clamp(22px, 3.6458333333vw, 30px);
+    padding: 0 5.5555555556vw !important;
+  }
+  #celebrity_area .title {
+    padding: 0 !important;
+  }
+  #banner_area .banner_inner {
+    padding: 70px 0 150px;
+  }
+  #banner_area .banner_inner ul {
+    flex-wrap: wrap;
+  }
+  #banner_area .banner_inner li {
+    width: 100%;
+    height: 31.9010416667vw;
+  }
+  #banner_area .banner_inner li a {
+    padding: 0 9.1569767442%;
+    justify-content: center;
+  }
+  #banner_area .banner_inner li p {
+    margin-bottom: 7px;
+  }
+  #banner_area .banner_inner li:first-child {
+    margin-bottom: 40px;
+  }
+  #banner_area .banner_inner .left_banner .banner_img {
+    width: 41.40625vw;
+    height: 33.0625vw;
+    top: -5px;
+    right: -43px;
+  }
+  #banner_area .banner_inner .right_banner .banner_img {
+    right: -41px;
+  }
+  #banner_area .banner_inner li h5 {
+    font-size: 3.3854166667vw;
+  }
+  .scroll_crop .swiper-slide {
+    width: 41.2291666667vw;
+    height: auto;
+  }
+  .scroll_crop .thumb_img {
+    height: auto;
+  }
+  .slide_area {
+    padding-left: 5.5555555556vw !important;
+  }
+  #cate_best .tab_contents .swiper-slide {
+    width: 74.0885416667vw;
+    height: auto;
+  }
+  #cate_best .tab_contents .swiper-slide .thumb_img {
+    height: 49.8697916667vw;
+  }
+  #cate_best .tab_contents .swiper-slide .thumb_img img {
+    width: 100%;
+    height: auto;
+  }
+  .cate_conts {
+    padding-left: 5.5555555556vw !important;
+  }
+  #celebrity_area .celeb_contents {
+    padding: 0;
+  }
+  #celebrity_area .conts_area {
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 90px;
+    gap: 30px;
+  }
+  #celebrity_area .conts_area .conts_img {
+    height: 73.046875vw !important;
+  }
+  #celebrity_area .conts_area:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+  #banner_area .banner_inner li p {
+    font-size: clamp(14px, 2.0833333333vw, 18px);
+    line-height: 1;
+  }
+  .thumb_hover ul li {
+    width: 40px;
+    height: 40px;
+    margin: 0 4px;
+  }
+  .thumb_hover ul li img {
+    width: 100%;
+    height: 100%;
+  }
+  #celebrity_area {
+    padding-bottom: 150px;
+  }
+  #celebrity_area .conts_desc {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #celebrity_area .conts_desc > div {
+    width: calc(100% - 167px);
+  }
+  #celebrity_area .conts_desc p {
+    font-size: clamp(12px, 2.0833333333vw, 16px);
+    text-align: left;
+    line-height: 1;
+  }
+  #celebrity_area .conts_desc h5 {
+    font-size: clamp(18px, 2.8645833333vw, 22px);
+    text-align: left;
+    margin-bottom: 0;
+  }
+  #celebrity_area .conts_desc .conts_btn {
+    width: 21.7447916667vw;
+    padding: 0;
+    height: 52px;
+    text-align: center;
+    line-height: 52px;
+    font-size: clamp(12px, 2.0833333333vw, 16px);
+  }
+  #cate_best {
+    padding-top: 0;
+  }
+  #cate_best .tab_btn {
+    margin-bottom: 40px;
+    gap: clamp(15px, 2.6041666667vw, 20px);
+  }
+  #cate_best .tab_btn li {
+    font-size: clamp(15px, 2.6041666667vw, 20px);
+    padding: 5px 24px;
+  }
+  #cate_best .title {
+    margin-bottom: 30px;
+  }
+  #cate_best .tab_contents .swiper-slide .prd_name {
+    font-size: clamp(15px, 2.34375vw, 18px);
+  }
+  #cate_best .tab_contents .swiper-slide .cont {
+    font-size: clamp(12px, 1.8229166667vw, 14px);
+  }
+  #cate_best .tab_contents .swiper-slide .rate .value {
+    font-size: clamp(20px, 3.125vw, 24px);
+  }
+  #cate_best .tab_contents .swiper-slide .rate .unit {
+    font-size: clamp(14px, 2.34375vw, 18px);
+  }
+  #cate_best .tab_contents .swiper-slide .price .value {
+    font-size: clamp(20px, 3.125vw, 24px);
+  }
+  #cate_best .tab_contents .swiper-slide .price .unit {
+    font-size: clamp(14px, 2.34375vw, 18px);
+  }
+  #cate_best .tab_contents .swiper-slide .price_regular {
+    font-size: clamp(14px, 2.0833333333vw, 16px);
+  }
+  .commend {
+    align-items: flex-end;
+  }
+  #video_area {
+    padding: 0 !important;
+  }
+  #video_area #video_swiper_slide .swiper-slide {
+    width: 86.598625vw;
+    height: auto;
+    font-size: 0;
+  }
+  #video_area #video_swiper_slide .swiper-slide button {
+    width: 100px;
+    height: 100px;
+  }
+  #video_area #video_swiper_slide .swiper-slide button::after {
+    width: 25.3846153846%;
+    margin-left: 4px;
+    margin-top: 0;
+  }
+  #notice > div {
+    width: 100%;
+  }
+  #notice .swiper {
+    width: 100%;
+    margin-left: 0;
+  }
+  #notice h5 {
+    min-width: 80px;
+    font-size: clamp(16px, 2.6041666667vw, 20px);
+  }
+  #notice .swiper-slide a {
+    font-size: clamp(14px, 2.0833333333vw, 16px);
+    align-items: center;
+  }
+  #notice .swiper-slide span {
+    font-size: clamp(11px, 1.8229166667vw, 14px);
+  }
+  #bt_banner > a {
+    height: 65.8385416667vw;
+    padding: 17.6583493282% 0 0;
+  }
+  #bt_banner > a img {
+    bottom: -15.9309021113%;
+    top: auto;
+    right: auto;
+    left: 8px;
+    width: 88.6627906977%;
+    height: auto;
+  }
+  #bt_banner > a .banner_txt {
+    text-align: center;
+  }
+  #bt_banner > a .banner_txt p {
+    font-size: clamp(14px, 2.34375vw, 18px);
+    margin-bottom: 13px;
+    line-height: 1;
+  }
+  #bt_banner > a .banner_txt h5 {
+    font-size: clamp(20px, 4.1666666667vw, 32px);
+  }
+  #bt_banner {
+    padding-bottom: 105px;
+  }
+  .ft_contents {
+    flex-direction: column;
+  }
+  .ft_contents .sns_area {
+    position: static;
+  }
+  .ft_contents .copy {
+    position: absolute;
+    bottom: 100px;
+  }
+}
+@media (min-width: 1121px) {
+  .m_icon {
+    display: none !important;
+  }
+}
+@media (max-width: 500px) {
+  .scroll_crop .item_desc {
+    font-size: 12px;
+  }
+  .scroll_crop .item_name {
+    font-size: 16px;
+  }
+  .scroll_crop .price {
+    font-size: 18px;
+  }
+}
