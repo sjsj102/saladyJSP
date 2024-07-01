@@ -45,10 +45,7 @@
 		
 	-->
 	<!-- 프로젝트 패키지 안 클래스에 설정된 로그 출력 -->
-	<logger name="ksmart.ks48team02" level="INFO" additivity="false">
-		<appender-ref ref="STDOUT" />
-		<appender-ref ref="ROLLING_FILE" />
-	</logger>
+/
 
 	<!-- log4jdbc 옵션 설정 --> 
 	<logger name="jdbc" level="OFF" additivity="false">
@@ -85,7 +82,8 @@
 	<logger name="jdbc.resultsettable" level="OFF" additivity="false">
 		<appender-ref ref="STDOUT" />
 	</logger>
-
+	<logger name="org.mybatis" level="DEBUG"/>
+	<logger name="org.springframework" level="DEBUG"/>
 	<!-- 필수 : 전역(root)에 관련된 로그를 담는 곳 ( ksmart.mybatis ) -->
 	<root level="DEBUG"> <!-- ERROR : error가 났을 때만 로그 출력 -->
 		<appender-ref ref="STDOUT" />

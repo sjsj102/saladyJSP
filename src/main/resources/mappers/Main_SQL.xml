@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.salady.saladyJSP.mapper.MainMapper">
+
+    <select id="selectNoticeList" resultType="com.salady.saladyJSP.dto.NoticeDTO">
+        SELECT
+            n.notice_id                           as noticeId,
+            n.notice_title                        as noticeTitle,
+            n.notice_subtitle                     as noticeSubtitle,
+            n.notice_contents                     as noticeContents,
+            date_format(n.reg_dt, "%Y-%m-%d")     as regDt,
+            date_format(n.re_dt, "%Y-%m-%d")      as reDt
+        FROM
+            notice as n
+    </select>
+
+</mapper>

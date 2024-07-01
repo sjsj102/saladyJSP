@@ -1176,7 +1176,12 @@
             <h5>공지사항</h5>
             <div id="notice_swiper" class="swiper mySwiper">
                 <ul class="swiper-wrapper">
-
+                    <c:forEach var="item" items="${noticeList}">
+                        <li class="swiper-slide">
+                            <a href="#">${item.noticeTitle}</a>
+                            <span>${item.regDt}</span>
+                        </li>
+                    </c:forEach>
                 </ul>
 
             </div>
