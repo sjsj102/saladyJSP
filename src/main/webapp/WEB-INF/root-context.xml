@@ -13,16 +13,14 @@
     <!-- Component Scan 설정 -->
     <context:component-scan base-package="com.salady.saladyJSP"/>
 
-    <!-- Property Placeholder 설정 (application.properties 또는 .yml 파일에서 값 로드) -->
-<!--    <context:property-placeholder location="classpath:application.properties"/>-->
-
     <!-- DataSource 설정 -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/saladydb"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/saladydb?serverTimezone=Asia/Seoul&amp;useSSL=false"/>
         <property name="username" value="saladydbuser"/>
         <property name="password" value="saladydbpass"/>
     </bean>
+
 
     <!-- MyBatis SqlSessionFactory 설정 -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -38,16 +36,5 @@
     <!-- MyBatis Mapper 스캔 설정 -->
     <mybatis-spring:scan base-package="com.salady.saladyJSP.mapper"/>
 
-    <!-- JdbcTemplate 설정 -->
-    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
-
-    <!-- 서비스 계층 빈 정의 예제 -->
-    <!--
-    <bean id="yourService" class="com.salady.saladyJSP.service.YourServiceImpl">
-        <property name="yourMapper" ref="yourMapper"/>
-    </bean>
-    -->
 
 </beans>
