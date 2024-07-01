@@ -13,7 +13,7 @@
             date_format(n.reg_dt, "%Y-%m-%d")     as regDt,
             date_format(n.re_dt, "%Y-%m-%d")      as reDt
         FROM
-            notice as n
+            sd_notice as n
     </select>
 
 </mapper>
