@@ -1,17 +1,30 @@
 package com.salady.saladyJSP.controller;
 
 import com.salady.saladyJSP.service.MainService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
+import javax.servlet.http.HttpSession;
 
+
+@Controller
+@RequiredArgsConstructor
 public class MainController {
 
-    // private final MainService mainService;
+    private final MainService mainService;
 
     @RequestMapping(value={"","/"})
-    public String MainView(){
+    public String MainView(Model model,
+                           HttpSession session){
+
+        String userName = (String) session.getAttribute("userName");
+
+
+        model.addAttribute("userName", userName);
+        model.addAttribute("noticeList", mainService.selectNoticeList());
+
         return "index";
     }
 }
