@@ -34,7 +34,7 @@
     </bean>
 
     <!-- MyBatis Mapper 스캔 설정 -->
-    <mybatis-spring:scan base-package="com.salady.saladyJSP.mapper"/>
+    <mybatis-spring:scan base-package="com.salady.saladyJSP.**.mapper"/>
 
 
 </beans>

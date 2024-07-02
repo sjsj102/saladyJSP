@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.salady.saladyJSP.mapper.MainMapper">
 
-    <select id="selectNoticeList" resultType="com.salady.saladyJSP.dto.NoticeDTO">
+    <select id="selectNoticeList" resultType="com.salady.saladyJSP.common.dto.NoticeDTO">
         SELECT
             n.notice_id                           as noticeId,
             n.notice_title                        as noticeTitle,
