@@ -22,9 +22,9 @@ public class MyAppContextListener implements ServletContextListener {
             Driver driver = drivers.nextElement();
             try {
                 DriverManager.deregisterDriver(driver);
-                System.out.println("Deregistering JDBC driver: " + driver);
+                System.out.println("Unregistering JDBC driver: " + driver);
             } catch (Exception e) {
-                System.err.println("Error deregistering JDBC driver: " + driver);
+                System.err.println("Error unregistering JDBC driver: " + driver);
                 e.printStackTrace();
             }
         }
