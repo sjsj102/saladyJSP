@@ -1,38 +1,21 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="mytag" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="path" value="<%= request.getContextPath() %>" />
 
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="anchor" content>
-    <meta name="title" content="샐러디, 매일매일 찾아가는 건강 식단">
-    <meta name="description" content="매일매일 신선한 샐러드를 집에서 만나요! 주문 당일 제조되어 보내지는 건강하고 든든한 한 끼, 샐러디가 책임져요.">
-    <meta name="keywords" content="샐러드, 닭가슴살, 샐러드배달, 샐러드도시락, 다이어트, 다이어트식단, 다이어트도시락, 헬스, 식단, 식단관리, 배달샐러드">
+    <mytag:meta_tag />
     <title>샐러디, 매일매일 찾아가는 샐러드</title>
 
-    <!-- favicon -->
-    <link rel="shortcut icon" href="<c:url value='/resources/images/salady_favicon.png'/>">
     <!-- css -->
-    <link rel="stylesheet" href="<c:url value='/resources/css/style.css'/>">
-    <link rel="stylesheet" href="<c:url value='/resources/css/style_m.css'/>">
-    <link rel="stylesheet" href="<c:url value='/resources/css/reset.css'/>">
-
-    <!-- font -->
-    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
-    <link rel="stylesheet" href="<c:url value='/resources/css/font/font.css'/>">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- plugin -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="<c:url value='/resources/js/jquery.scrollToGiveClass.js'/>"></script>
+    <mytag:css_tag />
+    <link rel="stylesheet" href="<c:url value='/resources/css/main_style.css' />">
+    <link rel="stylesheet" href="<c:url value='/resources/css/main_style_m.css' />">
+    <mytag:js_tag />
     <!-- js -->
-    <script src="<c:url value='/resources/js/script.js'/>"></script>
+    <script src="<c:url value='/resources/js/main_script.js' />"></script>
 </head>
 <body>
 <div class="top_banner">
@@ -100,7 +83,7 @@
 <main>
     <section id="main_banner">
         <video loop autoplay muted>
-            <source src="<c:url value='/resources/video/main_video_1.mp4'/>" type="video/mp4" >
+            <source src="<c:url value='/resources/video/main_video_1.mp4' />" type="video/mp4" >
         </video>
 
         <div class="main_inner">

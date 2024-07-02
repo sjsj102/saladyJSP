@@ -1,6 +1,6 @@
-package com.salady.saladyJSP.controller;
+package com.salady.saladyJSP.common.controller;
 
-import com.salady.saladyJSP.service.MainService;
+import com.salady.saladyJSP.common.service.MainService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

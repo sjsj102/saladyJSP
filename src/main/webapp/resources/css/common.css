@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+:root {
+    --main_color : #29B260;
+
+    --sub_color1 : #55DC8B;
+    --sub_color2 : #FFE5BF;
+    --sub_color3 : #9A1200;
+    --sub_color4 : #CAEAA3;
+    --sub_color5 : #09692F;
+
+    --point_color1 : #EB4444;
+
+    --font_color1 : #141515;
+
+    --gray_color1 : #EEEEEE;
+}
+
+body * {
+    font-family: "Pretendard";
+    font-size: 14px;
+    color: var(--font_color1);
+    box-sizing: border-box;
+}
+
+::-moz-selection {
+    background: rgba(169, 187, 176, 0.5803921569);
+    color: #484848;
+}
+
+::selection {
+    background: rgba(169, 187, 176, 0.5803921569);
+    color: #484848;
+}
+
+::-moz-selection {
+    background: rgba(169, 187, 176, 0.5803921569);
+    color: #484848;
+}
+
+::-webkit-selection {
+    background: rgba(169, 187, 176, 0.5803921569);
+    color: #484848;
+}
+#logo a {
+    display: block;
+    height: 100%;
+    background: url("../images/logo.png") no-repeat center/cover;
+    text-indent: -9999px;
+    color: transparent;
+    font-size: 0;
+}
+#logo.bk a {
+    background: url("../images/logo_black.png") no-repeat center/cover;
+}

@@ -1,4 +1,4 @@
-package com.salady.saladyJSP.dto;
+package com.salady.saladyJSP.common.dto;
 
 import lombok.Getter;
 import lombok.Setter;
