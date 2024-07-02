@@ -1,7 +1,7 @@
 package com.salady.saladyJSP.common.service.impl;
 
 import com.salady.saladyJSP.common.dto.NoticeDTO;
-import com.salady.saladyJSP.mapper.MainMapper;
+import com.salady.saladyJSP.common.mapper.MainMapper;
 import com.salady.saladyJSP.common.service.MainService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

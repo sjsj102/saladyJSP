@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.salady.saladyJSP.mapper.MainMapper">
+<mapper namespace="com.salady.saladyJSP.common.mapper.MainMapper">
 
     <select id="selectNoticeList" resultType="com.salady.saladyJSP.common.dto.NoticeDTO">
         SELECT

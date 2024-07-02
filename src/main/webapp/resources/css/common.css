@@ -50,3 +50,6 @@ body * {
     color: transparent;
     font-size: 0;
 }
+#logo.bk a {
+    background: url("../images/logo_black.png") no-repeat center/cover;
+}

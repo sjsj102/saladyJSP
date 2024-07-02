@@ -1,10 +1,11 @@
 <%@ tag description="header Tag" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<c:set var="path" value="<%= request.getContextPath() %>" />
 
 <header>
     <section class="header_inner">
         <h1 id="logo">
-            <a href="#">salady</a>
+            <a href="<c:url value='${path}/' />">salady</a>
         </h1> <!--// #logo -->
         <nav>
             <ul class="menu">
@@ -33,7 +34,7 @@
                         <c:when test="${empty userName}">
                             <ul class="sub_menu">
                                 <li><a href="#">로그인</a></li>
-                                <li><a href="#">회원가입</a></li>
+                                <li><a href="/join.do">회원가입</a></li>
                                 <li><a href="#">마이페이지</a></li>
                                 <li><a href="#">배송조회</a></li>
                                 <li><a href="#">1:1 문의</a></li>

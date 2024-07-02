@@ -1,4 +1,4 @@
-package com.salady.saladyJSP.mapper;
+package com.salady.saladyJSP.common.mapper;
 
 import com.salady.saladyJSP.common.dto.NoticeDTO;
 import org.apache.ibatis.annotations.Mapper;

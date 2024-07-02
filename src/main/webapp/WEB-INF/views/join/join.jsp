@@ -8,14 +8,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="mytag" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<html>
+<c:set var="path" value="<%= request.getContextPath() %>" />
+
+<!DOCTYPE html>
+<html lang="ko">
 <head>
     <mytag:meta_tag />
     <title>샐러디, 매일매일 찾아가는 샐러드</title>
 
     <!-- css -->
     <mytag:css_tag />
-
+    <link rel="stylesheet" href="<c:url value='/resources/css/join_style.css' />"/>
 
     <mytag:js_tag />
     <!-- js -->
@@ -23,7 +26,7 @@
 <body>
     <div id="loginWrap">
         <div class="conts_wrap">
-            <h1 id="logo"><a href="<%= request.getContextPath() %>">salady</a></h1>
+            <h1 id="logo" class="bk"><a href="<c:url value='${path}/' />">salady</a></h1>
             <form id="frm" action="#" method="post">
                 <section class="input_area">
                     <input type="text" class="user_id" placeholder="아이디"
