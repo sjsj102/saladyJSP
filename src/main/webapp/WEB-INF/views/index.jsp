@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="/WEB-INF/tags" prefix="mytag" %>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="mytag" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!DOCTYPE html>
@@ -39,7 +39,7 @@
     <a href="#">지금 회원가입시 2000p 즉시 지급!!</a>
 </div>
 <!-- header start -->
-<%--<mytag:header />--%>
+<mytag:header />
 <!-- header end -->
 <div class="all_menu_area">
     <ul>
