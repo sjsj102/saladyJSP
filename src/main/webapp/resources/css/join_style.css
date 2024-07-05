@@ -3,3 +3,239 @@
     width: 144px;
     height: 26px;
 }
+.input_area input:-webkit-autofill,
+.input_area input:-webkit-autofill:hover,
+.input_area input:-webkit-autofill:focus,
+.input_area input:-webkit-autofill:active {
+    -webkit-text-fill-color: #000;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent !important;
+}
+
+.input_area input:-webkit-autofill, .input_area input:-webkit-autofill:hover, .input_area input:-webkit-autofill:focus, .input_area input:-webkit-autofill:active {
+    -webkit-text-fill-color: #000;
+    background-color: transparent !important;
+    -webkit-transition: background-color 5000s ease-in-out 0s;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.input_area input:autofill,
+.input_area input:autofill:hover,
+.input_area input:autofill:focus,
+.input_area input:autofill:active {
+    -webkit-text-fill-color: #000;
+    background-color: transparent !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+#loginWrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f7f7f7;
+}
+
+.conts_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 500px;
+    width: 80vw;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(98, 98, 100, 0.123);
+    padding: 60px 60px;
+}
+.conts_wrap #logo {
+    width: 100%;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+}
+.conts_wrap #logo a {
+    background: url(../images/logo_black.png) no-repeat center/cover;
+    width: 144px;
+    height: 100%;
+    display: block;
+}
+.conts_wrap form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.conts_wrap form .input_area {
+    position: relative;
+    height: 48px;
+    padding: 0 5%;
+    background: rgba(237, 237, 241, 0.4392156863);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    color: #bdbdbd;
+}
+.conts_wrap form .input_area span.email_txt {
+    color: #bdbdbd;
+    white-space: nowrap;
+}
+.conts_wrap form .input_area span.view_btn,
+.conts_wrap form .input_area span.hide_btn {
+    width: 25px;
+    height: 25px;
+    background: #000;
+    cursor: pointer;
+    background: url("../images/view_icon.svg") no-repeat center/100%;
+}
+.conts_wrap form .input_area span.hide_btn {
+    background: url("../images/hidden_icon.svg") no-repeat center/100%;
+}
+.conts_wrap form .input_area input {
+    font-size: 16px;
+    font-weight: 300;
+    color: #1e1f1e;
+    height: 100%;
+    width: 75%;
+    background: transparent;
+    border: none;
+}
+
+.conts_wrap form input::-moz-placeholder {
+    color: #acacac;
+}
+.conts_wrap form input::placeholder {
+    color: #acacac;
+}
+.conts_wrap form input:focus {
+    outline: none;
+}
+.conts_wrap form input:-webkit-autofill, .conts_wrap form input:-webkit-autofill:hover, .conts_wrap form input:-webkit-autofill:focus, .conts_wrap form input:-webkit-autofill:active {
+    background: transparent;
+}
+.conts_wrap form input:autofill,
+.conts_wrap form input:autofill:hover,
+.conts_wrap form input:autofill:focus,
+.conts_wrap form input:autofill:active {
+    background: transparent;
+}
+.conts_wrap form button.login_btn {
+    height: 55px;
+    border: none;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.conts_wrap form button.login_btn:hover {
+    background: #29B260;
+    cursor: pointer;
+}
+
+.gender_btn {
+    display: none;
+}
+
+.input_area > div {
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.toggle_btn {
+    border: none;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding-right: 25px;
+    width: 75px;
+    text-align: left;
+}
+
+.toggle_btn.on::after {
+    transform: rotate(180deg);
+}
+
+.toggle_btn::after {
+    content: "";
+    background: url("../images/arrow-btn.svg") no-repeat center/100%;
+    margin-left: 5px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 9;
+    width: 15px;
+    height: 15px;
+    margin-top: -7px;
+}
+
+.telecom_area {
+    background: rgba(255, 255, 255, 0.9254901961);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    outline: 1px solid #ececec;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 105%);
+    width: 100px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    box-shadow: 2px 2px 15px rgba(134, 131, 148, 0.11);
+}
+
+.option_btn {
+    width: 100%;
+    border: none;
+    height: 24px;
+    border-radius: 3px;
+    cursor: pointer;
+    background: transparent;
+    text-align: left;
+    transition: all 0.3s;
+    font-size: 12px;
+    color: #000000;
+}
+
+.option_btn:hover {
+    text-decoration: underline;
+}
+
+#emailDomain {
+    border: none;
+    background: transparent;
+    color: #bdbdbd;
+}
+
+#emailDomain:focus {
+    outline: none;
+}
+
+.checkbox_area {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+#exp_checkbox ~ label {
+    font-family: "Pretendard";
+    font-size: 12px;
+    margin-right: 10px;
+}
+#exp_checkbox ~ label span {
+    color: #29B260;
+    margin: 0 3px 0 7px;
+}
+.err_message {
+    font-family: "Pretendard";
+    font-size: 12px;
+    color: #FF4242;
+}

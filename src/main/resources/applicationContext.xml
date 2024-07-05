@@ -7,24 +7,6 @@
                            http://www.springframework.org/schema/context
                            http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- MyBatis 설정 -->
-<!--    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">-->
-<!--        <property name="dataSource" ref="dataSource" />-->
-<!--        &lt;!&ndash; MyBatis 설정 파일이 있다면 설정 &ndash;&gt;-->
-<!--        &lt;!&ndash; <property name="configLocation" value="classpath:mybatis-config.xml" /> &ndash;&gt;-->
-<!--    </bean>-->
-
-    <!-- mapper 설정 -->
-<!--    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
-<!--        <property name="basePackage" value="com.salady.saladyJSP.mapper" />-->
-<!--        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>-->
-<!--    </bean>-->
-
-    <!-- JdbcTemplate 설정 -->
-<!--    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
-<!--        <property name="dataSource" ref="dataSource"/>-->
-<!--    </bean>-->
-
     <!-- 컴포넌트 스캔 설정 -->
     <context:component-scan base-package="com.salady.saladyJSP"/>
 
