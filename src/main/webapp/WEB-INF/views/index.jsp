@@ -7,7 +7,6 @@
 <html lang="ko">
 <head>
     <mytag:meta_tag />
-    <title>샐러디, 매일매일 찾아가는 샐러드</title>
 
     <!-- css -->
     <mytag:css_tag />

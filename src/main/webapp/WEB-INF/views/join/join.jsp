@@ -13,8 +13,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <mytag:meta_tag />
-    <title>샐러디, 매일매일 찾아가는 샐러드</title>
+    <mytag:meta_tag title="회원가입"/>
 
     <!-- css -->
     <mytag:css_tag />
@@ -33,7 +32,7 @@
                            onfocus="this.placeholder=''"
                            onblur="this.placeholder='아이디'"
                            name="userId">
-                    <span class="email_txt">@ salady.com</span>
+<%--                    <span class="email_txt">@ salady.com</span>--%>
                 </section>
                 <section class="input_area password_area">
                     <input type="password" placeholder="비밀번호"
@@ -73,7 +72,6 @@
                     <div>
                         <button type="button" aria-expanded="false" class="toggle_btn">
                             통신사
-
                         </button>
 
                         <ul class="telecom_area">
@@ -163,18 +161,18 @@
 
 
             // 체크박스 체크 유무
-            // if($('#exp_checkbox').is(':checked')){
-            // 	document.getElementById('frm').submit();
-            // 	alert("회원가입이 완료되었습니다.");
-            // 	<%-- let comfirmBox = comfirm("로그인창으로 넘어가실래요?");
-                    // 	if(comfirmBox == true){
-                    // 		<% 	response.sendRedirect(request.getContextPath()+"/user/login.jsp"); %>
-                    // 	} else {
-                    // 		<% 	response.sendRedirect(request.getContextPath()); %>
-                    // 	} --%>
-            // } else {
-            // 	$('.checkbox_area').append("<span class='err_message'>필수 항목에 체크해주세요.</span>");
-            // }
+            if($('#exp_checkbox').is(':checked')){
+            	document.getElementById('frm').submit();
+            	alert("회원가입이 완료되었습니다.");
+                let comfirmBox = comfirm("로그인하시겠습니까?");
+                    	if(comfirmBox == true){
+                    <%--// 		<% 	response.sendRedirect(request.getContextPath()+"/user/login.jsp"); %>--%>
+                    	} else {
+                    <%--// 		<% 	response.sendRedirect(request.getContextPath()); %>--%>
+                    	}
+            } else {
+            	$('.checkbox_area').append("<span class='err_message'>필수 항목에 체크해주세요.</span>");
+            }
 
             // // 아이디 중복 체크
             // <%
