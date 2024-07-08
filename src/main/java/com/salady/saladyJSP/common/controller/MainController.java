@@ -2,13 +2,14 @@ package com.salady.saladyJSP.common.controller;
 
 import com.salady.saladyJSP.common.service.MainService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.HttpSession;
 
-
+@Slf4j
 @Controller
 @RequiredArgsConstructor
 public class MainController {
