@@ -8,7 +8,7 @@ import java.sql.Driver;
 import java.sql.DriverManager;
 import java.util.Enumeration;
 
-// @Slf4j
+@Slf4j
 public class MyAppContextListener implements ServletContextListener {
 
     @Override
@@ -28,9 +28,9 @@ public class MyAppContextListener implements ServletContextListener {
                 System.out.println("Unregistering JDBC driver: " + driver);
             } catch (Exception e) {
                 System.err.println("Error unregistering JDBC driver: " + driver);
-                e.printStackTrace();
-                //log.error("Error Occurs!!", e);
-                // logger.error("Error Occurs!!", e); 이걸로 나중에 수정하면 좋겠다
+
+                log.error("Error Occurs!!", e);
+
             }
         }
     }
