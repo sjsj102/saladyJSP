@@ -12,9 +12,11 @@
     <mytag:css_tag />
     <link rel="stylesheet" href="<c:url value='/resources/css/main_style.css' />">
     <link rel="stylesheet" href="<c:url value='/resources/css/main_style_m.css' />">
-    <mytag:js_tag />
+    <mytag:script_tag />
     <!-- js -->
-    <script src="<c:url value='/resources/js/main_script.js' />"></script>
+    <script src="<c:url value='/resources/js/main_script.js' />" charset='utf-8'></script>
+    <!-- ts -->
+
 </head>
 <body>
 <div class="top_banner">
@@ -919,7 +921,7 @@
                     <div class="swiper-slide">
                         <a href="#">
                             <div class="thumb_img">
-                                <img src="./images/cate_thumb_img_4.jpg" alt="샐러드">
+                                <img src="<c:url value='/resources/images/cate_thumb_img_4.jpg'/>" alt="샐러드">
                                 <!--  hover -->
                                 <div class="thumb_hover">
                                     <ul>

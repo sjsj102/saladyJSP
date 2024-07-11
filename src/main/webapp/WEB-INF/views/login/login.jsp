@@ -15,7 +15,7 @@
     <mytag:css_tag />
     <!-- css -->
     <link rel="stylesheet" href="<c:url value='/resources/css/login_style.css' />">
-    <mytag:js_tag />
+    <mytag:script_tag />
     <!-- js -->
 </head>
 <body>

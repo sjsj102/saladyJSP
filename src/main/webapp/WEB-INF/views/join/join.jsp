@@ -19,8 +19,10 @@
     <mytag:css_tag />
     <link rel="stylesheet" href="<c:url value='/resources/css/join_style.css' />"/>
 
-    <mytag:js_tag />
+    <mytag:script_tag />
     <!-- js -->
+<%--    <script src="<c:url value='/resources/js/join_ts.js'/>"></script>--%>
+    <link rel="stylesheet" href="">
 </head>
 <body>
     <div id="loginWrap">

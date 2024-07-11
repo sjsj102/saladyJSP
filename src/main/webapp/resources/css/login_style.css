@@ -60,16 +60,16 @@
 .conts_wrap form#inputUserInfo button.login_btn {
     background: #000;
     color: #fff;
+    line-height: 56px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.4s;
     margin-top: 25px;
-    cursor: pointer;
+    border: none;
 }
 
 .conts_wrap form#inputUserInfo button.login_btn:hover {
     background: #29B260;
-    cursor: pointer;
 }
 .conts_wrap .join_txt {
     text-align: center;

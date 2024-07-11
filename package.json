@@ -1,8 +1,22 @@
 {
   "devDependencies": {
+    "@types/jquery": "^3.5.30",
     "@types/node": "^20.14.10",
+    "@types/swiper": "^6.0.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
-    "eslint": "^8.57.0"
+    "eslint": "^8.57.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.3",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "glob": "^11.0.0",
+    "swiper": "^11.1.4"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
   }
 }
