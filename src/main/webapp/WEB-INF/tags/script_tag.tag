@@ -7,4 +7,4 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="<c:url value='/resources/js/jquery.scrollToGiveClass.js'/>"></script>
 <!-- ts -->
-<%--<script src="<c:url value='/resources/js/common_ts.js' />"></script>--%>
+<script src="<c:url value='/resources/js/ts_common.js' />"></script>

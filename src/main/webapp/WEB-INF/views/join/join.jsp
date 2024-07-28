@@ -21,7 +21,7 @@
 
     <mytag:script_tag />
     <!-- js -->
-<%--    <script src="<c:url value='/resources/js/join_ts.js'/>"></script>--%>
+    <script src="<c:url value='/resources/js/ts_join.js'/>"></script>
     <link rel="stylesheet" href="">
 </head>
 <body>
