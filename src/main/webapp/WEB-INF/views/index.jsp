@@ -1,18 +1,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib tagdir="/WEB-INF/tags" prefix="mytag" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ include file="/WEB-INF/tils/taglibTiles.jspf"%>
 <c:set var="path" value="<%= request.getContextPath() %>" />
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <mytag:meta_tag />
-
+    <%@ include file="/WEB-INF/tils/metaTiles.jspf" %>
     <!-- css -->
-    <mytag:css_tag />
+    <%@ include file="/WEB-INF/tils/cssTiles.jspf" %>
     <link rel="stylesheet" href="<c:url value='/resources/css/main_style.css' />">
     <link rel="stylesheet" href="<c:url value='/resources/css/main_style_m.css' />">
-    <mytag:script_tag />
+    <%@ include file="/WEB-INF/tils/scriptTiles.jspf" %>
     <!-- js -->
     <script src="<c:url value='/resources/js/main_script.js' />" charset='utf-8'></script>
     <!-- ts -->
@@ -23,7 +20,7 @@
     <a href="#">지금 회원가입시 2000p 즉시 지급!!</a>
 </div>
 <!-- header start -->
-<mytag:header />
+<%@ include file="/WEB-INF/tils/header.jspf" %>
 <!-- header end -->
 <div class="all_menu_area">
     <ul>
@@ -1093,10 +1090,9 @@
     </section>
 </main>
 
-<footer class="section">
+<section class="section">
     <div id="notice">
         <div>
-
             <h5>공지사항</h5>
             <div id="notice_swiper" class="swiper mySwiper">
                 <ul class="swiper-wrapper">
@@ -1114,71 +1110,8 @@
             </div>
         </div>
     </div> <!--// #notice -->
-    <div class="ft_contents">
-        <nav class="ft_menu">
-            <ul>
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#">개인정보처리방침</a></li>
-                <li><a href="#">전자금융거래약관</a></li>
-                <li><a href="#">이벤트</a></li>
-                <li><a href="#">자주 묻는 질문</a></li>
-            </ul>
-        </nav>
-        <div class="ft_info">
-            <div class="info">
-                <p class="company">(주) 샐러디</p>
-                <p class="about">
-                    <span>주소</span>경기도 안성시 월곶면 안성대로 1432번길 51
-                    <br>
-                    <span>대표이사</span>전슬지
-                    <span>개인정보책임</span>전슬지
-                    <span>사업자등록번호</span>123-45-67890
-                    <br>
-                    <span>통신판매업 신고번호</span>제2023-경기안성-00164호
-                    <a href="javascript:void(0)">[사업자정보확인]</a>
-                </p>
-            </div>
-            <div class="ft_text">
-                일부 상품의 경우 주식회사 샐러디는 통신판매의 당사자가 아닌 통신판매중개자로서
-                <br>
-                상품, 상품정보, 거래에 대한 책임이 제한될 수 있으므로, 각 상품 페이지에서
-                <br>
-                구체적인 내용을 확인하시기 바랍니다.
-            </div>
-            <p class="copy">
-                copyright &copy; <span>salady</span> Corp. All Rights Reserved.
-            </p>
-        </div> <!--// .ft_info -->
-        <div class="ft_cs_center">
-            <p class="ft_cs">
-                1233-4765
-            </p>
-            <p class="about">
-                <span>C.S</span>평일 09:00 - 17:30 (점심 11:30 - 13:00)  주말 및 공휴일 제외
-                <br>
-                <span>e-mail</span>salady@salady.co.kr
-                <span>fax</span>02-415-4342
-            </p>
-            <p class="ft_kg_text">
-                <strong>KG 이니시스 구매안전 서비스</strong>
-                <br>
-                고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰이 가입한 PG에스크로
-                구매안전서비스를 이용하실 수 있습니다
-                <a href="#">[서비스 가입사실 확인]</a>
-            </p>
-        </div>
-
-
-
-        <div class="sns_area">
-            <a href="#"><img src="<c:url value='/resources/images/kakao_icon.png'/>" alt="카카오톡"></a>
-            <a href="#"><img src="<c:url value='/resources/images/youtube_icon.png'/>" alt="유튜브"></a>
-            <a href="#"><img src="<c:url value='/resources/images/naver_icon.png'/>" alt="네이버"></a>
-            <a href="#"><img src="<c:url value='/resources/images/instar_icon.png'/>" alt="인스타그램"></a>
-            <a href="#"><img src="<c:url value='/resources/images/facebook_icon.png'/>" alt="페이스북"></a>
-        </div>
-    </div>
-</footer>
+    <%@ include file="/WEB-INF/tils/footer.jspf" %>
+</section>
 
 <script>
 

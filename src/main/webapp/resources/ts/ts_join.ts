@@ -1,6 +1,11 @@
 import { z } from "zod";
 
-const joinObj = z.object({
+const userSchema = z.object({
     userId : z.string(),
+    userPw : z.string(),
+    userNm : z.string(),
+    userEmail : z.string(),
+    userTelno : z.string(),
+});
 
-})
+console.log(userSchema);

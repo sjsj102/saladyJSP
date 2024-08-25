@@ -14,10 +14,12 @@ import lombok.ToString;
  */
 @Getter @Setter @ToString
 public class NoticeDTO {
-    private String noticeId;            // 공지사항 고유번호
+    private String noticeSn;            // 공지사항 일련번호
     private String noticeTitle;         // 공지사항 제목
     private String noticeSubtitle;      // 공지사항 서브 제목
     private String noticeContents;      // 공지사항 내용
     private String regDt;               // 등록일자
+    private String regUserSn;           // 등록 사용자 일련번호
     private String reDt;                // 수정일자
+    private String reUserSn;            // 수정 사용자 일련번호
 }

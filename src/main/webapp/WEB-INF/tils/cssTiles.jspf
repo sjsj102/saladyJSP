@@ -1,6 +1,11 @@
-<%@ tag description="common css Tag" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: seuljijeon
+  Date: 8/25/24
+  Time: 오후 5:21
+  공통 css
+--%>
 <!-- common css -->
 <link rel="stylesheet" href="<c:url value='/resources/css/common.css' />">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">

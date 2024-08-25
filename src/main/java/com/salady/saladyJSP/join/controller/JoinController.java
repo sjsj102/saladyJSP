@@ -1,4 +1,4 @@
-package com.salady.saladyJSP.common.controller;
+package com.salady.saladyJSP.join.controller;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

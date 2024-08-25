@@ -6,7 +6,7 @@
 
     <select id="selectNoticeList" resultType="com.salady.saladyJSP.common.dto.NoticeDTO">
         SELECT
-            n.notice_id                           as noticeId,
+            n.notice_sn                           as noticeId,
             n.notice_title                        as noticeTitle,
             n.notice_subtitle                     as noticeSubtitle,
             n.notice_contents                     as noticeContents,
@@ -16,4 +16,20 @@
             sd_notice as n
     </select>
 
+    <insert id="ceateNotice">
+        insert into
+            sd_notice (
+            notice_sn,
+            notice_title,
+            notice_subtitle,
+            notice_contents,
+            reg_user_sn
+        ) values (
+                     nextval('notice_seq'),
+                     '공지사항 입니다',
+                     '서브 제목입니다',
+                     '공지사항 내용 입니다',
+                     '1'
+                 )
+    </insert>
 </mapper>
